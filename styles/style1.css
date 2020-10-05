@@ -1,23 +1,24 @@
+/* ************************ import styling ******************** */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-html{
-    border: 6px solid rgb(23, 112, 50);
-}
-
+/* ************************ class styling ******************** */
 .body_page {
     font-family: 'Lato', sans-serif, Calibri;
     width: 1100px;
     margin: 0 auto;
-    border: 6px solid blue;
+    display: grid;
 }
 
 .header {
     background-image: url("../img/header_bg.png"); 
     background-color: #cccccc;
     background-repeat: space;
-    
 
     position: relative;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 .header a{
@@ -28,68 +29,63 @@ html{
     position: relative;
 }
 
-/* a:link {
-    text-decoration: none;
-}
-  
-   visited link 
-a:visited {
-    color: green;
-}
-  
-    mouse over link 
-a:hover {
-    color: hotpink;
-}
-  
-   selected link 
-a:active {
-    color: blue;
-} */
-
 .container_1 {
     background-image: url("../img/banner_bg.png"); 
     background-color: #cccccc;
     background-repeat: space;
     height: 425px;
-    display: grid;
     
     position: relative;
-}
-.container_1 img{
-    margin: 20px;
+
     grid-column-start: 1;
-    grid-column-end: 3;
-}
-.grid_item4{ 
-    grid-column-start: 3;
     grid-column-end: 5;
 }
 
-
-.container_2 {
-    display: grid;
+.grid_item1{ 
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    bottom: 150px;
+    color: white;
+} 
+.container_1 img{
+    margin: 20px;
 }
 
-.grid_item1 {
-    grid-row-start: 1;
-    grid-row-end: 2; 
+.grid_item2 {
+    margin-left: 50px;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
-.grid_item2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
 .grid_item3 {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+.grid_item4 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+
     grid-column-start: 3;
     grid-column-end: 4;
 }
+
+.container_1_text {
+    color: white;
+}
+
+.footer_text{
+    color: white;
+}
+
+/* ************************ id styling ******************** */
 
 #pagina_not_found_text {
     color: crimson;
@@ -101,11 +97,49 @@ a:active {
     border: 8px solid white;
 }
 
+#auto1_img {
+    width: 300px;
+    height: 150px;
+    border: 8px solid white;
+}
+
+#auto2_img {
+    width: 300px;
+    height: 150px;
+    border: 8px solid white;
+}
+
+#auto3_img {
+    width: 300px;
+    height: 150px;
+    border: 8px solid white;
+}
+
 #kleding_img {
     width: 690px;
     height: 320px;
     border: 8px solid white;
 }
+
+#kleding1_img {
+    width: 300px;
+    height: 300px;
+    border: 8px solid white;
+}
+
+#kleding2_img {
+    width: 300px;
+    height: 300px;
+    border: 8px solid white;
+}
+
+#kleding3_img {
+    width: 300px;
+    height: 300px;
+    border: 8px solid white;
+}
+
+/* ************************ elements styling ******************** */
 
 footer {
     background-image: url("../img/footer_bg.png"); 
@@ -114,12 +148,15 @@ footer {
     height: 40px;
     text-align: center;
     padding: 5px;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 p {
     font-size: 14px;
     line-height: 20px;
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 h1 {
